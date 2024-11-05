@@ -1,0 +1,218 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    font-family: "Vazirmatn", sans-serif;
+    color: #086788;
+    text-align: center;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.8px;
+    margin-top: -30px;
+}
+
+.container-principal {
+    padding: 70px 50px;
+    border-radius: 10px;
+    width: 70%;
+    height: 70%; /* height 300px */
+    border: 1px solid #086788;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: grid;
+    align-content: space-between;
+}
+
+.divzona {
+    display: inherit;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-top: 20.4px;
+    display: flex;
+    flex-direction: column;
+}
+
+.inputs {
+    width: 75%;
+    height: 35px;
+    padding-left: 20px;
+    margin: 0 auto;
+    border-radius: 20px;
+    border: 3px solid #086788;
+
+}
+
+::placeholder {
+   text-align: center;
+}
+
+/* or, for legacy browsers */
+
+::-webkit-input-placeholder {
+   text-align: center;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   text-align: center;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   text-align: center;
+}
+
+:-ms-input-placeholder {
+   text-align: center;
+}
+
+.labelInputs {
+    color: #086788;
+    text-align: center;
+    font-family: "Vazirmatn", sans-serif;
+    font-size: 14.4px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.72px;
+    margin: 3px;
+}
+
+#securityId {
+    margin-bottom: 50px;
+}
+#ssid {
+    border-radius: 50px;
+    border: 3px solid #086788;
+}
+
+.button-group {
+    display: flex;
+    align-items: center;
+    height: 10px;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.botoesTipo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    border: 1px solid #c7c7c7;
+    background: #e8e8e8;
+    color: #514b4b;
+    text-align: center;
+    font-family: "Vazirmatn", sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.48px;
+    width: 115px;
+    height: 35px;
+    cursor: pointer;
+    flex-shrink: 0;
+    position: relative;
+    top: -30px;
+    left: 0px;
+    margin-right: 20px;
+}
+
+.button-group input[type="radio"] {
+    position: absolute;
+    visibility: hidden;
+    width: 1px;
+    height: 1px;
+}
+
+.button-group input[type="radio"]:checked + label {
+    background-color: #514b4b;
+    color: #eeeeee;
+    border: 1px solid #d4ecce;
+}
+
+.botoesTipo:hover {
+    opacity: 0.7;
+    background-color: #dae1d8;
+    border: 1px solid #eeeeee;
+    flex-shrink: 0;
+    color: #514b4b;
+}
+
+.labelRadio {
+    color: #514b4b;
+    text-align: center;
+    font-family: "Vazirmatn", sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.75px;
+}
+
+button {
+    cursor: pointer;
+}
+
+#generateBtn {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    height: 42px;
+    text-align: center;
+    position: relative;
+    bottom: -50px;
+}
+
+#botaoGerar {
+    border-radius: 50px;
+    border: 1px solid #FFF;
+    background: #086788;
+    color: #FFF;
+    text-align: center;
+    font-family: "Vazirmatn", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.2px;
+    padding: 10px 100px;
+}
+#botaoGerar:hover {
+    border-radius: 50px;
+    border: 3px solid #086788;
+    background: #FFF ;
+    color: #086788;
+    text-align: center;
+    font-family: "Vazirmatn", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.2px;
+    padding: 10px 100px;
+}
+
+
+.qr-code-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    height: 135.8px;
+    border-radius: 10px;;
+    stroke-width: 1px;
+    stroke: #b6a0a0;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    margin-top: 31.8px;
+}
