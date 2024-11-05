@@ -12,6 +12,11 @@ Before running the application, you'll need to have Python and the following lib
 - Flask
 - qrcode
 - base64
+- io
+
+```
+pip install requirements.txt
+```
 
 ## Customization
 - Personalize the HTML page style in `static/styles.css`.
