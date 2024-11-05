@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Qrcode</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap" rel="stylesheet">
+
+
+<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=c6jN9vSqVNjtmtEvXjChD0g9R9Wd1bOzUgmV9RW71VroQgcWHrDgKDnGcWWtborx_MMVS0flevLK4GSWuZOiLPGIXiaXGj7iZxH1mIUP-eiNJs7QUM_Mdx42ZrbC-SkV5O_jx8H4i3tJokVh_rb4fA" charset="UTF-8"></script></head>
+
+<body>
+    <div class="container-principal">
+        <h1>{{ titulo }}</h1>
+            <form action="/qr_code" method="post" enctype="multipart/form-data">
+            <div class="divzona">
+                <div class="inputs-container">
+                    <div class="input-group">
+                        <label for="ssid" class="labelInputs">Insira o link:</label>
+                        <input type="text" class="inputs" id="link" name="link" placeholder="Link" required>
+                    </div>
+                </div>
+                <div class="qr-code-container">
+                    <img img="qr-code-image" src="{{ url_for('static', filename='qr_code.png') }}" alt="QR Code">
+                </div>
+            </div>
+            <div id="generateBtn"><button id="botaoGerar">GERAR</button></div>
+        </form>
+    </div>
+</body>
+
+</html>
